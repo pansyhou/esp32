@@ -1,0 +1,11 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.portWin": "COM13",
+  "idf.flashType": "UART",
+  "idf.adapterTargetName": "esp32s3",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-bridge.cfg"
+  ],
+  "idf.espIdfPathWin": "E:\\ApplicationDocs\\.espressif\\frameworks\\esp-idf-v4.4.2",
+  "idf.toolsPathWin": "E:\\ApplicationDocs\\.espressif\\tools"
+}

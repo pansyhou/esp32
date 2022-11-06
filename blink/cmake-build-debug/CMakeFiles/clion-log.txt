@@ -1,0 +1,11 @@
+E:\Application\Jetbrain\apps\CLion\ch-0\222.3739.54\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/Application/mingw64/bin/mingw32-make.exe "-DCMAKE_C_COMPILER=E:/Application/10 2021.10/bin/arm-none-eabi-gcc.exe" "-DCMAKE_CXX_COMPILER=E:/Application/10 2021.10/bin/arm-none-eabi-g++.exe" -G "CodeBlocks - MinGW Makefiles" -S E:\embedded\esp32\blink -B E:\embedded\esp32\blink\cmake-build-debug
+CMake Error at E:/Application/Espressif/tools/cmake/project.cmake:243 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  E:/Application/Espressif/examples/common_components/led_strip
+Call Stack (most recent call first):
+  E:/Application/Espressif/tools/cmake/project.cmake:327 (__project_init)
+  CMakeLists.txt:8 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "E:/embedded/esp32/blink/cmake-build-debug/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,22 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "E:/Application/Espressif/components/bootloader/subproject",
+    "build_dir":          "E:/embedded/esp32/led_strip/cmake-build-debug/bootloader",
+    "config_file":        "E:/embedded/esp32/led_strip/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "a8ef757",
+    "target":             "esp32s3",
+    "rev":                "",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "E:/Application/Espressif/components/efuse/Kconfig;E:/Application/Espressif/components/esp_common/Kconfig;E:/Application/Espressif/components/esp_hw_support/Kconfig;E:/Application/Espressif/components/esp_system/Kconfig;E:/Application/Espressif/components/freertos/Kconfig;E:/Application/Espressif/components/hal/Kconfig;E:/Application/Espressif/components/log/Kconfig;E:/Application/Espressif/components/newlib/Kconfig;E:/Application/Espressif/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "E:/Application/Espressif/components/bootloader/Kconfig.projbuild;E:/Application/Espressif/components/esp_app_format/Kconfig.projbuild;E:/Application/Espressif/components/esp_rom/Kconfig.projbuild;E:/Application/Espressif/components/esptool_py/Kconfig.projbuild;E:/Application/Espressif/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "E:/Application/Espressif/components/bootloader", "E:/Application/Espressif/components/bootloader_support", "E:/Application/Espressif/components/efuse", "E:/Application/Espressif/components/esp_app_format", "E:/Application/Espressif/components/esp_common", "E:/Application/Espressif/components/esp_hw_support", "E:/Application/Espressif/components/esp_rom", "E:/Application/Espressif/components/esp_system", "E:/Application/Espressif/components/esptool_py", "E:/Application/Espressif/components/freertos", "E:/Application/Espressif/components/hal", "E:/Application/Espressif/components/log", "E:/Application/Espressif/components/bootloader/subproject/main", "E:/Application/Espressif/components/bootloader/subproject/components/micro-ecc", "E:/Application/Espressif/components/newlib", "E:/Application/Espressif/components/partition_table", "E:/Application/Espressif/components/soc", "E:/Application/Espressif/components/spi_flash", "E:/Application/Espressif/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}

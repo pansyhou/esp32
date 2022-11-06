@@ -1,0 +1,21 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader/subproject",
+    "build_dir":          "E:/embedded/esp32/twai_network_listen_only/build/bootloader",
+    "config_file":        "E:/embedded/esp32/twai_network_listen_only/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.4.2-dirty",
+    "target":             "esp32s3",
+    "rev":                "",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32s3-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/efuse/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp32s3/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_common/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_hw_support/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_system/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/freertos/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/hal/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/log/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/newlib/Kconfig;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader/Kconfig.projbuild;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_rom/Kconfig.projbuild;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esptool_py/Kconfig.projbuild;E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32s3", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader_support", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/efuse", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp32s3", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_common", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_hw_support", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_rom", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esp_system", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/esptool_py", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/freertos", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/hal", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/log", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader/subproject/main", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader/subproject/components/micro-ecc", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/newlib", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/partition_table", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/soc", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/spi_flash", "E:/Application/Espressif/frameworks/esp-idf-v4.4.2/components/xtensa", "" ]
+}

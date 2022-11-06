@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Application/Espressif/components/esp_rom/patches/esp_rom_longjmp.S
+xtensa/corebits.h
+-
+sdkconfig.h
+-
+
+E:/Application/Espressif/components/xtensa/include/xtensa/corebits.h
+
+config/sdkconfig.h
+

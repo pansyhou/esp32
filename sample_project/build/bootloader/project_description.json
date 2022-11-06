@@ -1,0 +1,22 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "E:/Application/ESP_idf/esp-idf/components/bootloader/subproject",
+    "build_dir":          "E:/embedded/esp32/sample_project/build/bootloader",
+    "config_file":        "E:/embedded/esp32/sample_project/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v5.0-beta1-473-geea8629fa1",
+    "target":             "esp32s3",
+    "rev":                "",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32s3-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "E:/Application/ESP_idf/esp-idf/components/efuse/Kconfig;E:/Application/ESP_idf/esp-idf/components/esp_common/Kconfig;E:/Application/ESP_idf/esp-idf/components/esp_hw_support/Kconfig;E:/Application/ESP_idf/esp-idf/components/esp_system/Kconfig;E:/Application/ESP_idf/esp-idf/components/freertos/Kconfig;E:/Application/ESP_idf/esp-idf/components/hal/Kconfig;E:/Application/ESP_idf/esp-idf/components/log/Kconfig;E:/Application/ESP_idf/esp-idf/components/newlib/Kconfig;E:/Application/ESP_idf/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "E:/Application/ESP_idf/esp-idf/components/bootloader/Kconfig.projbuild;E:/Application/ESP_idf/esp-idf/components/esp_app_format/Kconfig.projbuild;E:/Application/ESP_idf/esp-idf/components/esp_rom/Kconfig.projbuild;E:/Application/ESP_idf/esp-idf/components/esptool_py/Kconfig.projbuild;E:/Application/ESP_idf/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "E:/Application/ESP_idf/esp-idf/components/bootloader", "E:/Application/ESP_idf/esp-idf/components/bootloader_support", "E:/Application/ESP_idf/esp-idf/components/efuse", "E:/Application/ESP_idf/esp-idf/components/esp_app_format", "E:/Application/ESP_idf/esp-idf/components/esp_common", "E:/Application/ESP_idf/esp-idf/components/esp_hw_support", "E:/Application/ESP_idf/esp-idf/components/esp_rom", "E:/Application/ESP_idf/esp-idf/components/esp_system", "E:/Application/ESP_idf/esp-idf/components/esptool_py", "E:/Application/ESP_idf/esp-idf/components/freertos", "E:/Application/ESP_idf/esp-idf/components/hal", "E:/Application/ESP_idf/esp-idf/components/log", "E:/Application/ESP_idf/esp-idf/components/bootloader/subproject/main", "E:/Application/ESP_idf/esp-idf/components/bootloader/subproject/components/micro-ecc", "E:/Application/ESP_idf/esp-idf/components/newlib", "E:/Application/ESP_idf/esp-idf/components/partition_table", "E:/Application/ESP_idf/esp-idf/components/soc", "E:/Application/ESP_idf/esp-idf/components/spi_flash", "E:/Application/ESP_idf/esp-idf/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}
