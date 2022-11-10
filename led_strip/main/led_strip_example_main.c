@@ -14,7 +14,7 @@
 #define RMT_LED_STRIP_RESOLUTION_HZ 10000000 // 10MHz resolution, 1 tick = 0.1us (led strip needs a high resolution)
 #define RMT_LED_STRIP_GPIO_NUM      48
 
-#define EXAMPLE_LED_NUMBERS         1
+#define EXAMPLE_LED_NUMBERS         13
 #define EXAMPLE_CHASE_SPEED_MS      10
 
 static const char *TAG = "example";
@@ -128,18 +128,24 @@ void app_main(void) {
     //        }
     //        start_rgb += 60;
     //    }
-      for (int r = 0; r < 5; r++) {
-          for (int g = 0; g < 5; g++) {
-              for (int b = 0; b <5 ; b++) {
-                  led_strip_pixels[0] = g;
-                  led_strip_pixels[1] = b;
-                  led_strip_pixels[2] = r;
-                  ESP_LOGI(TAG,"r=%d g=%d b=%d",r,g,b);
-                  ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
-                  vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
-              }
-          }
+//      for (int r = 0; r < 5; r++) {
+//          for (int g = 0; g < 5; g++) {
+//              for (int b = 0; b <5 ; b++) {
+//                  led_strip_pixels[0] = g;
+//                  led_strip_pixels[1] = b;
+//                  led_strip_pixels[2] = r;
+//                  ESP_LOGI(TAG,"r=%d g=%d b=%d",r,g,b);
+//                  ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
+//                  vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
+//              }
+//          }
+//      }
+        //先做好整包再发送
+      for (int i = 0; i < EXAMPLE_LED_NUMBERS * 3; i++) {
+          led_strip_pixels[i] = 1;
       }
+      ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
+      vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
   }
 }
 
