@@ -14,8 +14,8 @@
 #define RMT_LED_STRIP_RESOLUTION_HZ 10000000 // 10MHz resolution, 1 tick = 0.1us (led strip needs a high resolution)
 #define RMT_LED_STRIP_GPIO_NUM      48
 
-#define EXAMPLE_LED_NUMBERS         13
-#define EXAMPLE_CHASE_SPEED_MS      10
+#define EXAMPLE_LED_NUMBERS         20
+#define EXAMPLE_CHASE_SPEED_MS      1
 
 static const char *TAG = "example";
 
@@ -141,11 +141,15 @@ void app_main(void) {
 //          }
 //      }
         //先做好整包再发送
+        uint32_t
       for (int i = 0; i < EXAMPLE_LED_NUMBERS * 3; i++) {
-          led_strip_pixels[i] = 1;
+          led_strip_pixels[i] = 255;
       }
+//      ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
+//      vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
       ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
       vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
+      i
   }
 }
 
